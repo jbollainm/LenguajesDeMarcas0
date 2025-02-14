@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo HTML para Estudiantes</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenidos a la Demo de HTML</h1>
+      <nav>
+        <ul type="none">
+          <li>
+            <a href="#intro"> intro</a>
+          </li>
+          <li>
+            <a href="#multimedia">
+              <img
+                src="the-internet-svgrepo-com.svg"
+                alt="Icono svg"
+                height="24"
+                width="24"
+              />
+            </a>
+          </li>
+          <li><a href="#tabla">Tabla de Datos</a></li>
+          <li><a href="https://www.google.com">Me vuelvo a Google</a></li>
+          <!--href puede ser a seeciones dentro de la misma página o a lugares fuera de la página-->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro">
+        <h2>Introducción</h2>
+        <p>
+          <!-- Lorem es una funcion que se usa para añadir texto de ejemplo -->
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ex
+          esse sit animi itaque deserunt ratione, veniam sapiente accusamus
+          aspernatur. Veniam impedit autem blanditiis esse ipsa, non excepturi
+          reiciendis praesentium.
+        </p>
+        <img src="archivos/Fondo de pantalla.jpg" alt="Imagen de ejemplo" />
+        <!-- cuando carguemos imagenes lo recomendable es usar rutas relativas si las queremos de nuestro ordenador  no recomendado no poner tamaño en una imagen ya que no controlaremos el tamaño de esta, siempre se recomienda darle unos valores-->
+      </section>
+      <section id="multimedia">
+        <h2>Contenido Multimedia</h2>
+        <video width="400" controls autoplay muted>
+          <source src="Presentación de la asignatura.mp4" type="video/mp4" />
+          Tu navegador no soporta el elemento de video.
+        </video>
+      </section>
+
+      <section id="tabla">
+        <h2>Ejemplo de Tabla</h2>
+        <table>
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+          </tr>
+          <tr>
+            <td>Juan</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>María</td>
+            <td>30</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Demo HTML para Estudiantes</p>
+      <button onclick="alert('¡Hola, estudiante!')">Haz clic aquí</button>
+    </footer>
+  </body>
+</html>
